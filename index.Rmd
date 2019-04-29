@@ -1,0 +1,19 @@
+--- 
+title: "DSBA-5122 Final Project"
+author: "Nicholas Occhipinti, Karyn Cook, Ziyin Lui"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: rstudio/bookdown-demo
+description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
+---
+
+# Domain problem characterization
+
+For the final project we wanted to research data related to opioids, in an effort to gain more insight into the opioid epidemic.  Opioids are a medicine that are prescribed by doctors to treat severe pain.  Heroin is considered a type of opioid because it is similar in both the chemical makeup and the side effects.  While the benefit is pain relief, there is also the possibility that they will become highly addictive and can lead to patients abusing the drugs.  One area we are especially interested in is the increase in opioid prescriptions and how it has led to misuse, addiction and death.  The opioid epidimic has gotten worse over the years and on October 26 2017 the Acting HHS Secretary declared a Public Health emergency [@OpioidEpidemic].  
+
+Our domain problem is one for a hypothetical researcher wanting to explore the connection between prescriber rates of opioid prescriptions and opioid deaths.  The first part we wanted to look at was data on prescribers.  We found Medicare Part D Data for the most recent year (2016) [@MedicarePartD], in order to look at what opioids were being prescribed the most and where the highest amount of prescriber data occurred.  We also wanted to explore any connection between high prescriber rates and the number of deaths related to opioids. If addiction and overdoses are linked to prescribed medications instead of drugs obtained illegally, this could be a good starting place for researchers interested in solving the problem. Another related question is what are the characteristics of the deaths that occur for opioids in different states.  We compared age data, race data and the type of opioids to death rates to see how they are affected on a state by state basis.

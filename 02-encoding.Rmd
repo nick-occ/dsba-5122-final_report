@@ -1,0 +1,56 @@
+# Encoding/Interaction design
+
+Memoize library for word cloud and certain maps
+Notice performance improvements after loading data for a state it will loader quicker the next time
+
+Medicare prescriber data was large.  We were only interested in records that were opioid related drugs, so we excluded those rows from our query exported a cleaner version of the spreadsheet so it would load quicker.
+
+Seperated the Shiny app and the logic into separate files, the drugs.R function will load all the data and I have created functions that are called in the app.R file.  I also created dynamic functions where you can pass in text and it will interpret that as a variable in the data frame.  This helps avoid duplicating code where the only thing that is different is the variable name.
+
+Example
+getOpioidData(getState(), sym(getVariable()), 2)
+
+getOpioidData <- function(state, variable, rounding) {
+  result <- getDataSource(state) %>%
+    mutate(pc = round(!!variable,rounding)) %>%
+    arrange(desc(pc))
+  
+  if (state != "All") {
+    result <- result %>%
+      filter(nppes_provider_state == state) %>%
+      select(nppes_provider_state, drug_name, pc)
+  } else {
+    result <- result %>%
+      select(drug_name, pc)
+  }
+  
+  result <- result %>% 
+    na.omit()
+  
+  result
+}
+
+
+getOpioidData(getState(), sym(getVariable()), 2)
+
+getOpioidData <- function(state, variable, rounding) {
+  result <- getDataSource(state) %>%
+    mutate(pc = round(!!variable,rounding)) %>%
+    arrange(desc(pc))
+  
+  if (state != "All") {
+    result <- result %>%
+      filter(nppes_provider_state == state) %>%
+      select(nppes_provider_state, drug_name, pc)
+  } else {
+    result <- result %>%
+      select(drug_name, pc)
+  }
+  
+  result <- result %>% 
+    na.omit()
+  
+  result
+}
+
+

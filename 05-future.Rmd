@@ -1,0 +1,11 @@
+# Future Work
+
+Try to acquire county data for other analysis such as death and drug data
+Dig deeper into Medicare prescriber data because there is a lot of detailed information but it is such a big dataset for the time we had to develop an app.
+
+Other areas we would like to work on if given more time would be:
+* Investigate which states have stricter laws and if that contributes to less deaths
+* Storing the data in MongoDB
+
+With regard to overdoses and deaths from drugs that can be legally prescribed, did the individuals who died from opioid overdoses have a prescription? With the available data we had, this was not a question we can answer, but would be very useful for researchers into the problem, as these drugs do have important uses in improving quality of life for individuals living with chronic pain. Are patients with a legitimate need for painkillers obtaining them illegally as prescriber rates drop, and overdosing as a result of not being under the care of a physician? Are individuals who receive an opioid prescription the same individuals who are using them, or are they selling them? We believe access to data about the individuals would be extremely useful, though it may be difficult to obtain due to HIPAA.
+
