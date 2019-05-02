@@ -1,11 +1,7 @@
-# Future Work
+# Future work
 
-Try to acquire county data for other analysis such as death and drug data
-Dig deeper into Medicare prescriber data because there is a lot of detailed information but it is such a big dataset for the time we had to develop an app.
+When building this application we wanted to design an application that could serve as big an audience of possible.  One possibility would be expanding that location to have a worldwide view of opioid addiction, by gathering information for different countries.  With the same point get more data at the county level could provide more information about what type of area are common to opioid addiction.
 
-Other areas we would like to work on if given more time would be:
-* Investigate which states have stricter laws and if that contributes to less deaths
-* Storing the data in MongoDB
+As mentioned previously the Medicare Part D prescriber data is a large dataset and we have just scratched the surface with the type of information it is showing.  A future version of the application could incorporate more of the data, from comparing different years to developing different analysis to see if certain outcomes can be predicted using the variable available.
 
-With regard to overdoses and deaths from drugs that can be legally prescribed, did the individuals who died from opioid overdoses have a prescription? With the available data we had, this was not a question we can answer, but would be very useful for researchers into the problem, as these drugs do have important uses in improving quality of life for individuals living with chronic pain. Are patients with a legitimate need for painkillers obtaining them illegally as prescriber rates drop, and overdosing as a result of not being under the care of a physician? Are individuals who receive an opioid prescription the same individuals who are using them, or are they selling them? We believe access to data about the individuals would be extremely useful, though it may be difficult to obtain due to HIPAA.
-
+Other questions we drew from this project that we did not have data for, were which states have stricter laws against opioids and if that helps contribute to less deaths.  With regard to overdoses and deaths from drugs that can be legally prescribed, did the individuals who died from opioid overdoses have that prescription or was it obtained illegally? With the available data we had, this was not a question we can answer, but we feel it would be very useful for researchers investigating this problem.  While these drugs do have important uses in improving quality of life for individuals living with chronic pain. Are patients with a legitimate need for painkillers obtaining them illegally as prescriber rates drop, and overdosing as a result of not being under the care of a physician? How many individuals who receive an opioid prescription sell them illegally? We believe access to data about the individuals would be extremely useful, though it may be difficult to obtain due to HIPAA.

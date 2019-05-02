@@ -8,12 +8,27 @@ documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
-github-repo: rstudio/bookdown-demo
-description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
+github-repo: nick-occ/dsba_5122_final_project
+description: "The final report for DSBA-5122 Final Project"
 ---
 
-# Domain problem characterization
+# Introduction: Domain Problem and Data Characterization
 
-For the final project we wanted to research data related to opioids, in an effort to gain more insight into the opioid epidemic.  Opioids are a medicine that are prescribed by doctors to treat severe pain.  Heroin is considered a type of opioid because it is similar in both the chemical makeup and the side effects.  While the benefit is pain relief, there is also the possibility that they will become highly addictive and can lead to patients abusing the drugs.  One area we are especially interested in is the increase in opioid prescriptions and how it has led to misuse, addiction and death.  The opioid epidimic has gotten worse over the years and on October 26 2017 the Acting HHS Secretary declared a Public Health emergency [@OpioidEpidemic].  
+## Domain Problem
 
-Our domain problem is one for a hypothetical researcher wanting to explore the connection between prescriber rates of opioid prescriptions and opioid deaths.  The first part we wanted to look at was data on prescribers.  We found Medicare Part D Data for the most recent year (2016) [@MedicarePartD], in order to look at what opioids were being prescribed the most and where the highest amount of prescriber data occurred.  We also wanted to explore any connection between high prescriber rates and the number of deaths related to opioids. If addiction and overdoses are linked to prescribed medications instead of drugs obtained illegally, this could be a good starting place for researchers interested in solving the problem. Another related question is what are the characteristics of the deaths that occur for opioids in different states.  We compared age data, race data and the type of opioids to death rates to see how they are affected on a state by state basis.
+For the project we wanted to explore data related to opioids, in an effort to better understand and get more insight into the opioid epidemic.  Our domain problem is one for a researcher wanting to explore the connection between prescriber rates of opioid prescriptions and opioid related deaths both in the country as a whole and drilling down to the state level.  The first part we wanted to look at was data on prescribers.  This data would allow the researcher to see the distribution of opioids across the US and also find the most commonly prescribed opioids.  The second part of the data involved finding information about deaths that occur from opioid overdoses in the United States.  This would also allow the researcher to drill down to the state level.  Another level of detail that we felt would be an important task for the researcher is to categorize these deaths into different types of groups such as race and age.  This would add another level of detail and help identify groups that are suffering from opioid addiction, which would then allow researchers to provide information and where attention needs to be focused the most to combat the opioid epidemic [@OpioidEpidemic].
+
+
+## Data Characterization
+
+Opioids are medicine that are typically prescribed by doctors to treat severe pain.  Heroin is also considered an opioid due to there similar chemical makeup and effects.  While the benefit is pain relief, there is also the possibility that they will become highly addictive and can lead to patients abusing the drugs.  The increase in opioid prescriptions over time has led to misuse of prescription drugs, which has gotten to the point where on October 26 2017 the Acting HHS Secretary declared a Public Health emergency.  
+
+For data about prescribers we acquired Medicare Part D Prescriber Data from the Centers of Medicare and Medicaid Services for the most recent year (2016) [@MedicarePartD].  While this represents a subset of information on opioids, it contains a good sample size to work with.  We set the level of detail to be an aggregate of prescribers as a summary at the national and state level.  We further limited the scale to only records related to opioid prescriptions.  We focused our research on this dataset to indicators we felt would be of most interest to the researcher.  These indicators are the number of prescribers, number of claims and total drug cost related to opioids.  This data can be shown at the national and state level.  The second part of our development explored the connection between high prescriber rates and the number of deaths related to opioids. If addiction and overdoses are linked to prescribed medications instead of illegally obtained this could be a good starting place for researchers interested in solving this problem.  Another related question is what are the characteristics of the deaths that occur for opioids in different states.  We compared age data, race data and the type of opioids to death rates to see how they are affected on a state by state basis.
+
+
+## Target Users
+
+As mentioned in the previous section this application is being designed for a researcher in the field of medicine.  Our aim was to make this a tool that a researcher can use to find information at both the national and state level.  This allows the usability to reach a bigger audience where researchers from any state can use this tool to find information about their state of interest and compare what the findings are nationally or compare against other states.  With the hope of researchers using this application to find valuable insight that can be used in their research, we provide the ability for users to download our data in Excel and for our visualization plots to be exported as images.
+
+
+

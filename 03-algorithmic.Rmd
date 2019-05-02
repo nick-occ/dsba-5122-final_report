@@ -1,3 +1,44 @@
-# Methods
+# Algorithmic Design
 
-We describe our methods in this chapter.
+## Design
+
+We organized the code so that the Shiny application and logic are in separate files.  This serves two purposes in that it makes the code easier to work with, because it is easier to find functions that are being called by the application.   Also not all the code has to be executed in the server portion of the Shiny application when the application loads but rather functions are called when the user run certain interaction in the interface and only returns a subset of the data based on what they select.
+
+We had to take into consideration the size of the data and how that would impact performance in the app.  A specific example of this is with the Medicare Part D Prescriber data.  The raw data was the large dataset and was taking considerable time loading, we investigated further and found summary tables to use which was more manageable to work with.  Additionally we did some pre processing of the dataset remove data unrelated to opioids based filter flags that indicated records for opioid prescriptions.
+
+To link the user interaction with the visual design, we used reactives to ensure when the user makes changes to different parts of the interface the visualization changes to reflect the selection.  This improves the efficiency of the design, because when you define your reactive variables correctly no extra code is required to be written to keep track of all the different scenarios of options user can change in the interface.
+
+## Performance
+
+To assess if our design was meeting an acceptable performance, we had to deploy our app to shinyapps.io throughout the process of developing the app.  We did this because running the application locally was much faster than when hosted on through the shinyapps service, so we wanted to make sure that when big changes were made, we checked that performance wasn’t impacted.
+
+There were certain visualizations that were loaded quicker than others, and different visualizations can be generated based on criteria that is selected such as state, year and variable.  One item we used to improve performance was implementing the R memoise library to functions in order to save the results in memory.  We saw a benefit to this by testing a scenario where the user would want to click back and forth from state to state to see results.  The initial load time would take the normal time, but the true benefit is when a user comes back to the state that is now saved in memory and it returns results instantly.
+
+One pain point that was noticed early on was that we were providing the option for users to select variables and then we use functions to calculate the result.  We were writing multiple functions that were essentially the same with only the variable being different.  This conflicts with the code principle of Don’t Repeat Yourself DRY, so we needed a way to pass in the variable as a string and get it to be interpreted as field variable used to generate the result.  Through research we created dynamic functions where you can pass in text and it will interpret that as a variable in the data frame.  Below is an example where we enclose the item we want to interpret with the sym() syntax and then interpret that value as a variable by using the !! as see in the example below.
+
+**Example**
+```{r func_call, eval=FALSE}
+getOpioidData(getState(), sym(getVariable()), 2)
+```
+
+```{r func, eval=FALSE}
+getOpioidData <- function(state, variable, rounding) {
+  result <- getDataSource(state) %>%
+    mutate(pc = round(!!variable,rounding)) %>%
+    arrange(desc(pc))
+  
+  if (state != "All") {
+    result <- result %>%
+      filter(nppes_provider_state == state) %>%
+      select(nppes_provider_state, drug_name, pc)
+  } else {
+    result <- result %>%
+      select(drug_name, pc)
+  }
+  
+  result <- result %>% 
+    na.omit()
+  
+  result
+}
+```
