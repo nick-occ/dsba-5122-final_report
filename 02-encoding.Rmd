@@ -4,20 +4,20 @@
 
 Our data is centered around showing a researcher data for the United States.  Based on this we decided to encode our data in the form of map visualization in order to allow the user to see how data changes from state to state and see patterns in different regions of the country.  The values are encoded based on the variable selected using a choropleth mapping style that shades each state based on their value with lower values typically being lighter and transitioning to darker colors for higher values.
 
-![Chloropleth Map](./images/chloropleth_map.JPG)  
++ ![Chloropleth Map](./images/chloropleth_map.JPG)  
 
 
 As part of the data characterization we felt it was important to identify which opioids were the used the most based on different variables.  To provide this information to the user we developed a word cloud to encode the highly used opioids by making it a large size than the remain values and continuing to scale down the results so it is clear to the user which opioids are used the most.
 
-![Word Cloud](./images/word_cloud.jpg)  
++ ![Word Cloud](./images/word_cloud.jpg)  
 
 As part of the final analysis we wanted to identify the relationship between the prescription rates and deaths.  To do this we decided to present the user with a summary for each state for each year that was part of the dataset in the form of a line plot showing the prescription rate on the Y axis and each year on the X axis.  We encoded the death rates as points where both the size and color changes based on their values.  We also felt is was necessary to have a reference to the national data to assess the state condition overall so we created the same type of visualization in the same plot only at the national level.
 
-![Analysis of Prescription Rate vs Death Rate](./images/analysis1.JPG)  
++ ![Analysis of Prescription Rate vs Death Rate](./images/analysis1.JPG)  
 
 Another question we wanted to try and answer were what factors contributed to opioid deaths. We wanted to show the different variables we collected all together in one plot using a radar plot to so what variables stand out and how they form a relationship with one another as seen in the example below.  This can help identify what demographics need attention and can be used as an aid to develop a focused action plan.
 
-![Radar Plot](./images/radar_plot.JPG)  
++ ![Radar Plot](./images/radar_plot.JPG)  
 
 
 ## Interaction Design
@@ -26,4 +26,4 @@ The application has information for the entire United State so one key interacti
 
 Lastly, with this application being designed as a research tool, we wanted a way for users to take our visualization out of the application and into their environment whether that is in a report or a presentation.  To implement this we added a download button in all of the Data tables that is conditionally available only when the user is in that tab and simply click the Download button and the export will be downloaded to the users computer.  One benefit of using Plotly is that is comes with an option to export the plot by default, so all our Plotly based visualization can easily be downloaded as an image.
 
-![Opioid Deaths User Interface](./images/user_interface.JPG)  
++ ![Opioid Deaths User Interface](./images/user_interface.JPG)  
