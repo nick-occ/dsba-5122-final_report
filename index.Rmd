@@ -28,7 +28,7 @@ For data about prescribers, we acquired Medicare Part D Prescriber Data from the
 
 ## Target Users
 
-As mentioned in the previous section this application is being designed for a researcher in the field of medicine.  Our aim was to make this a tool that a researcher can use to find information at both the national and state level.  This allows the usability to reach a bigger audience where researchers from any state can use this tool to find information about their state of interest and compare what the findings are nationally or compare against other states.  With the hope of researchers using this application to find valuable insight that can be used in their research, we provide the ability for users to download our data in Excel and for our visualization plots to be exported as images.
+As mentioned in the previous section, this application is being designed for a researcher in the medical field. Our aim was to make this a tool that a researcher can use to find information at both the national and state level. This allows the usability to reach a bigger audience where researchers from any state can use this tool to find information about their state of interest and compare what the findings are nationally or compare against other states. With the hope of researchers using this application to find valuable insight that can be used in their research, we provide the ability for users to download our data in Excel and for our visualization plots to be exported as images.
 
 
 
