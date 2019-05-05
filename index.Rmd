@@ -31,4 +31,6 @@ For data about prescribers, we acquired Medicare Part D Prescriber Data from the
 As mentioned in the previous section, this application is being designed for a researcher in the medical field. Our aim was to make this a tool that a researcher can use to find information at both the national and state level. This allows the usability to reach a larger audience where researchers from any state can use this tool to find information about their state of interest and compare what the findings are nationally or compare against other states. With the hope of researchers using this application to find valuable insight that can be used in their research, we provide the ability for users to download our data in Excel and most of our visualization plots can be exported as images.
 
 
+## Application Information
 
+The application is hosted at https://nocchipi.shinyapps.io/dsba_5122_final_project/.  Information about the changes made to the application and how to install it locally can be found on our GitHub repo at https://github.com/nick-occ/dsba_5122_final_project.
