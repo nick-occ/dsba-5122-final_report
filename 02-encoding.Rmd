@@ -2,11 +2,11 @@
 
 ## Visual Encoding
 
-Our data is centered around visualizing data for the United States for a researcher. Based on this we decided to encode our data in the form of map visualization in order to allow the user to see how data changes from state to state and see patterns in different regions of the country. The values are encoded based on the variable selected using a choropleth mapping style that shades each state based on their value with lower values typically being lighter and transitioning to darker colors for higher values.
+Our data is centered around visualizing data for the United States for a researcher. Based on this we decided to encode our data in the form of a map visualization in order to allow the user to see how data changes from state to state and see patterns in different regions of the country. The values are encoded based on the variable selected using a choropleth mapping style that shades each state based on their value with lower values typically being lighter and transitioning to darker colors for higher values.
 
 + ![Chloropleth Map](./images/chloropleth_map.JPG)  
 
-As part of the data characterization, we felt it was important to identify which opioids were the used the most based on different variables. To provide this information to the user we developed a word cloud encoding showing the most highly recorded opioids. The most recorded opioids are displayed larger than the remaining values which scale down in order of frequency, so it is clear to the user which opioids are used the most.
+As part of the data characterization, we felt it was important to identify which opioids were used the most based on different variables. To provide this information to the user we developed a word cloud visualization. The most recorded opioids are displayed larger than the lower values which scale down in order of frequency, so it becomes clear to the user which opioids are used the most.
 
 + ![Word Cloud](./images/word_cloud.jpg)  
 
