@@ -1,6 +1,6 @@
 --- 
 title: "DSBA-5122 Final Project"
-author: "Nicholas Occhipinti, Karyn Cook, Ziyin Lui"
+author: "Nicholas Occhipinti, Karyn Cook, Ziyin Liu"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
