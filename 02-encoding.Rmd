@@ -2,7 +2,7 @@
 
 ## Visual Encoding
 
-Our data is centered around visualizing data for the United States for a researcher. Based on this we decided to encode our data in the form of a map visualization in order to allow the user to see how data changes from state to state and see patterns in different regions of the country. The values are encoded based on the variable selected using a choropleth mapping style that shades each state based on their value with lower values typically being lighter and transitioning to darker colors for higher values.
+Our data is centered around visualizing opioid data in the United States for a researcher. Based on this we decided to encode our data in the form of a map visualization in order to allow the user to see how data changes from state to state and see patterns in different regions of the country. The values are encoded based on the variable selected using a choropleth mapping style that shades each state based on their value with lower values typically being lighter and transitioning to darker colors for higher values.
 
 + ![Chloropleth Map](./images/chloropleth_map.JPG)  
 
@@ -10,7 +10,7 @@ As part of the data characterization, we felt it was important to identify which
 
 + ![Word Cloud](./images/word_cloud.jpg)  
 
-As part of the final analysis, we wanted to identify the relationship between the prescription rates and deaths. To do this we decided to present the user with a summary for each state throughout the years provided in the form of a line plot showing the prescription rate on the Y axis and each year on the X axis. We encoded the death rates as points where both the size and color change based on their values. We also felt it was necessary to have a reference to the national data to assess the states condition overall, so we created the same type of visualization in the same plot only with the national data.  This allows the user to assess if the death rate per state falls above or below the national average.
+As part of the final analysis, we wanted to identify the relationship between the prescription rates and deaths. To do this we decided to present the user with a summary for each state throughout the years provided in the form of a line plot showing the prescription rate on the Y axis and each year on the X axis. We encoded the death rates as points where both the size and color change based on their values. We also felt it was necessary to have a reference to the national data to assess the states condition overall, so we created the same type of visualization in the same plot only with the national data.  This allows the user to assess if the death and prescription rate per state falls above or below the national average.
 
 + ![Analysis of Prescription Rate vs Death Rate](./images/analysis1.JPG)  
 
